@@ -1,0 +1,504 @@
+/* General
+==================================*/
+@font-face {
+    font-family: "Avenir";
+    src: url(../lib/ionic/fonts/AvenirCondensedHand.ttf);
+    font-weight:400;
+}
+
+h1 {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h6 {
+    color: #fff;
+    text-shadow: 0 1px 0px #000;
+    font-size: 30px;
+    text-align: center;
+}
+
+h5 {
+    color: #555;
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+}
+
+h4 {
+    color: #FBAA1D;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+h3 {
+    color: #999;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.text-titulos {
+    color: #FBAA1D;
+    font-size: 22px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.input-pantallas-blacas {
+    color: #555 !important;
+    font-size: 18px !important;
+    text-align: left !important;
+    font-weight: bold !important;
+    width: 80% !important;
+    margin-left: 5%;
+    margin-right: 15%
+}
+
+/* Login
+==================================*/
+.app-icon {
+    background-color: #fff;
+    background: url('../img/logo.png') center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.app-icon-header {
+    background: url('../img/banner.png') no-repeat center !important;
+    background-size: 400px 80px !important;
+    background-color: #EFAB3C !important;
+}
+
+.app-icon-perfil {
+    background-color: #fff;
+    background: url('../img/contactIcon.png') center;
+    background-size: cover;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 100px;
+}
+
+.app-bar-profile {
+    background-color: #fff;
+    background: url('../img/profileBanner.png') center;
+    background-size: cover;
+    height: 6%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.altura-boton {
+    line-height: 5px !important;
+    min-height: 35px !important;
+}
+
+.background_solicita_pedido {
+    background: url('../img/solicitaTuPedido.png') center;
+    background-size: cover;
+    height: 50px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.padding-boton {
+    padding:-10px;
+}
+
+.span-login {
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+}
+
+.input-login {
+    color: #fff !important;
+    font-size: 16px !important;
+    text-align: left !important;
+    font-weight: bold;
+}
+
+.placeholder-login::-webkit-input-placeholder {
+    color: #fff !important;
+    font-size: 16px !important;
+    text-align: left !important;
+}
+
+.placeholder-login:-moz-placeholder {
+    color: #fff !important;
+    font-size: 16px !important;
+    text-align: left !important;
+}
+
+.placeholder-login::-moz-placeholder {
+    color: #fff !important;
+    font-size: 16px !important;
+    text-align: left !important;
+}
+
+.placeholder-login:-ms-input-placeholder {
+    color: #fff !important;
+    font-size: 16px !important;
+    text-align: left !important;
+}
+
+.input-unline {
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: solid;
+}
+
+.letra-amarilla {
+    color: #FBAA1D;
+    text-shadow: 0 1px 0px #000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.boton-transparente {
+    background-color: Transparent;
+    border: solid;
+    border-color: white;
+    border-radius: 8px;
+}
+
+.boton-gris {
+    background-color: Transparent;
+    border: solid;
+    border-color: #999;
+    border-radius: 8px;
+}
+
+.boton-rojo {
+    background-color: Transparent;
+    border: solid;
+    border-color: red;
+    border-radius: 8px;
+}
+
+.boton-centrado {
+    width: 70% !important;
+    margin-left: 15%;
+    margin-right: 15%
+}
+
+.boton-verde {
+    background-color: Transparent;
+    border: solid;
+    border-color: green;
+    border-radius: 8px;
+}
+
+.button-font {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fuente-boton {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fuente-boton-gris {
+    color: #999;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fuente-footer {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.custom-date-select {
+    float: left;
+    margin-right: 1px;
+}
+
+.custom-icon-white {
+    color: white;
+}
+
+.custom-icon-yellow {
+    color: #FBAA1D !important;
+}
+
+.custom-icon-green {
+    color: green !important;
+}
+
+.custom-icon-red {
+    color: red !important;
+}
+
+.custom-icon-tranparent {
+    color: transparent !important;
+}
+
+.custom-back-transparent {
+    background-color: Transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: solid white;
+}
+
+.footer-transparent {
+    background-color: Transparent;
+    border-top: solid white;
+}
+
+.linea-boton {
+    border-width: 1px;
+}
+
+.linea-boton0 {
+    border-width: 0px;
+}
+
+.custom-header {
+    color : #FBAA1D !important;
+    background-color: #FBAA1D !important;
+    height: 80px;
+}
+
+/* iniciarPedido
+==================================*/
+.logo-menu {
+    height: 200px;
+    width: 200px;
+}
+
+.titulo-iniciarPedido {
+    color: #222;
+    font-size: 26px;
+    text-align: center;
+}
+
+/* Menu
+==================================*/
+html, body, 
+.scroll /* because the <ion-content> content is placed inside a div.scroll */
+{
+  height: 100%;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;  
+}
+
+.container > .cell-row {
+  flex: 1;
+  display: flex;
+}
+.cell-row > div {
+  flex: 1;
+  flex-grow: 1;
+  color: #fff;
+  
+  /* Flex for these containers (cells) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container i[class^="ion-"] {
+  font-size: 90px;
+}
+.cell-row-1 {
+  background-color: #000;
+}
+.cell-row-2 {
+  background-color: #ccc;
+}
+.cell-row-3 {
+  background-color: #eee;
+}
+
+.cell-1 {
+  background-color: #FE642E;
+}
+.cell-2 {
+  background-color: #FA8258;
+}
+.cell-3 {
+  background-color: #FAAC58;
+}
+
+.titulo-menu {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 75%;
+}
+
+.titulo-menu1 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 75%;
+}
+
+.list-historial {
+  background-color: #F8ECE0;
+}
+
+.color-historial {
+  background-color: #FAFAFA;
+}
+
+.app-icon-reducido {
+    background-color: #fff;
+    background: url('../img/logo.jpg') center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 80px;
+    margin: 0 auto;
+    width: 80px;
+}
+
+/* Registro
+==================================*/
+.span-registro {
+    color: #fff !important;
+    font-size: 14px !important;
+    text-align: left !important;
+    font-weight: bold !important;
+}
+
+.input-registro {
+    color: #fff !important;
+    font-size: 14px !important;
+    text-align: left !important;
+    font-weight: bold;
+}
+
+.placeholder-registro::-webkit-input-placeholder {
+    color: #fff !important;
+    font-size: 14px !important;
+    text-align: left !important;
+}
+
+.placeholder-registro:-moz-placeholder {
+    color: #fff !important;
+    font-size: 14px !important;
+    text-align: left !important;
+}
+
+.placeholder-registro::-moz-placeholder {
+    color: #fff !important;
+    font-size: 14px !important;
+    text-align: left !important;
+}
+
+.placeholder-registro:-ms-input-placeholder {
+    color: #fff !important;
+    font-size: 14px !important;
+    text-align: left !important;
+}
+
+.popup {
+    width: 330px !important;
+}
+
+/* Detalles pedido
+==================================*/
+.total-detallePedido {
+    color: #fff;
+    text-shadow: 0 1px 0px #000;
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Finalizar pedido
+==================================*/
+.ionic_ratings .icon {
+font-size: 50px;
+}
+
+.ionic-titulo1-historial {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Avenir" !important;
+}
+
+.ionic-titulo2-historial {
+    color: #999;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Avenir" !important;
+}
+
+.ionic-texto-list-historial {
+    color: #AAA !important;
+    font-size: 10px !important;
+    text-align: left !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+}
+
+.ionic-texto-detalle-historial {
+    color: #AAA !important;
+    font-size: 14px !important;
+    text-align: left !important;
+    line-height: 1 !important;
+}
+
+#map {
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98%;
+    height: 85%;
+}
+
+.custom-card {
+    border-radius: 20px !important;
+    border: solid !important;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.8) !important;
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    width: 96% !important;
+}
+
+.ionic-datos-cliente-asignado {
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Avenir" !important;
+}
+
+.detalles-solicitud-title {
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+}

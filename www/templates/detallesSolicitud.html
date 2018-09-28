@@ -1,0 +1,32 @@
+<ion-view view-title="Detalles solicitud" align-title="left" ng-init="init()" cache-view="false">
+	<ion-header-bar class="app-icon-header">
+		<button class="button button-icon icon ion-chevron-left custom-icon-white" ng-click="irAtras()"></button>
+	</ion-header-bar>
+	<ion-content>
+		<div class="content" style="background-color: lightgray; height: 10%;">
+			<h1><a class="title ionic-titulo2-historial"><br>DETALLES DEL TRAYECTO</a></h1>
+		</div>
+		<h1 class="detalles-solicitud-title">Estado actual: {{detalleSeleccionado.status == '1' ? 'Finalizado' : 'En proceso'}}</h1>
+		<div class="list">
+			<div class="card custom-card">
+				<div class="item item-divider" style="background-color: #FBAA1D">
+					Pedido # {{pedidoSeleccionado.id}}
+				</div>
+				<div class="item item-text-wrap">
+					<p>Inicio: <b>{{detalleSeleccionado.initial_address}}</b></p>
+					<p>Destino: <b>{{detalleSeleccionado.final_address}}</b></p>
+					<br>
+					<p>Anotaciones: {{detalleSeleccionado.observations}}</p>
+				</div>
+			</div>
+			<button class="boton-verde boton-centrado button button-block ion-ios-refresh icon-left custom-icon-green" ng-click="cambiarEstadoDetalle()" ng-disabled="!habilitarCambioEstado"><a class="fuente-boton-gris">Está Listo</a>
+			</button>
+			<button class="boton-rojo boton-centrado button button-block ion-close-circled icon-left custom-icon-red" ng-click="noViable()" ng-disabled="!habilitarCambioEstado"><a class="fuente-boton-gris">No es Posible</a>
+			</button>
+			<button class="boton-gris boton-centrado button button-block ion-map icon-left custom-icon-yellow" ng-click="lanzarWazeInicio()"><a class="fuente-boton-gris">Waze al Inicio</a>
+			</button>
+			<button class="boton-gris boton-centrado button button-block ion-map icon-left custom-icon-yellow" ng-click="lanzarWazeDestino()"><a class="fuente-boton-gris">Waze al Destino</a>
+			</button>
+		</div>
+	</ion-content>
+</ion-view>

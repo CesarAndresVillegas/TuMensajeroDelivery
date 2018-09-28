@@ -1,0 +1,24 @@
+<ion-view view-title="Pedidos Asignados" align-title="left" ng-init="init()" cache-view="false">
+	<ion-header-bar class="app-icon-header">
+		<button class="button button-icon icon ion-chevron-left custom-icon-white" ng-click="irAtras()"></button>
+	</ion-header-bar>
+	<ion-content>
+		<div class="content" style="background-color: lightgray; height: 10%;">
+		<h1><a class="title ionic-titulo2-historial"><br>PEDIDOS ASIGNADOS</a></h1>
+		</div>
+		<div class="list">
+			<div class="card custom-card" ng-click="irDetallesPedido($index)" ng-repeat="p in pedidosAsignados">
+				<div class="item item-divider" style="background-color: #FBAA1D">
+					Pedido # {{p.id}}
+				</div>
+				<div class="item item-text-wrap">
+					<p>Fecha: {{p.register_date}}</p>
+					<p>Dirección de inicio: {{p.initial_address}}</p>
+					<p>Dirección de fin: {{p.final_address}}</p>
+					<p>Cant. trayectos: {{p.cant}}</p>
+					<p>Observaciones: {{p.observations}}</p>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

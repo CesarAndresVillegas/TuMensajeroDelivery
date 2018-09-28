@@ -1,0 +1,21 @@
+<ion-view view-title="Petición" name="menu-view" ng-init="init()" cache-view="false">
+  <ion-header-bar class="app-icon-header">
+    <button class="button button-icon icon ion-chevron-left custom-icon-white" ng-click="irAtras()" ng-disabled="controlDisabled"></button>
+  </ion-header-bar>
+  <ion-content class="padding" style="background: url(img/login.jpg) center; background-size: cover;">
+  <div class="container padding">
+   <br>
+    <h1 class="text-titulos">Recuperar Datos</h1>
+    <label class="item item-input input-unline">
+      <input class="input-pantallas-blacas" type="text" placeholder="Correo Electrónico" spellcheck="false" ng-model="recuperar.mail">
+    </label>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="boton-gris boton-centrado button button-block ion-ios-email icon-left custom-icon-yellow" ng-click="recuperarPass()">
+      <a class="fuente-boton-gris">Enviar a Tu Correo</a>
+    </button>
+  </div>
+</ion-content>
+</ion-view>

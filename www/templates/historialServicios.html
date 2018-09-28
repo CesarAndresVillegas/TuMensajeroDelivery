@@ -1,0 +1,198 @@
+<ion-view view-title="Historial">
+    <ion-header-bar class="app-icon-header">
+        <button class="button button-icon icon ion-chevron-left custom-icon-white" ng-click="irAtras()"></button>
+    </ion-header-bar>
+    <ion-content style="background: url(img/login.png) center; background-size: cover;">
+        <div class="padding-top hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+            </div>
+        </div>
+        <h1>Historial de <a style="color: #FBAA1D; text-shadow: 0 1px 0px #000; font-size: 24px;font-weight: bold;">Pedidos</a></h1>
+        <div class="row center-control2">
+            <label class="col col-20 item custom-back-transparent">
+                <div class="input-register placeholder-register">
+                    <p style="font-size: 14px; color: white; text-shadow: 1px 1px 1px #000; font-weight: bold; padding: 0px;">Inicio:</p>
+                </div>
+            </label>
+            <label class="col col-40 item item-input item-select custom-back-transparent">
+                <select class="custom-date-select" ng-change="selectDayList()" ng-model="consulta.monthInit" style="font-size: 12px; color: white; text-shadow: 1px 1px 1px #000; max-width: 100% !important; background-color: transparent; border: transparent; padding: 0px;">
+                    <option value="01">Enero(1)</option>
+                    <option value="02">Febrero(2)</option>
+                    <option value="03">Marzo(3)</option>
+                    <option value="04">Abril(4)</option>
+                    <option value="05">Mayo(5)</option>
+                    <option value="06">Junio(6)</option>
+                    <option value="07">Julio(7)</option>
+                    <option value="08">Agosto(8)</option>
+                    <option value="09">Septiembre(9)</option>
+                    <option value="10">Octubre(10)</option>
+                    <option value="11">Noviembre(11)</option>
+                    <option value="12">Diciembre(12)</option>
+                </select>
+            </label>
+            <label class="col col-20 item item-input item-select custom-back-transparent">
+                <select class="custom-date-select" ng-model="consulta.dayInit" style="font-size: 12px; color: white; text-shadow: 1px 1px 1px #000; max-width: 100% !important; background-color: transparent; border: transparent; padding: 0px;">
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </label>
+            <label class="col col-20 item item-input item-select custom-back-transparent">
+                <select class="custom-date-select" ng-model="consulta.yearInit" style="font-size: 12px; color: white; text-shadow: 1px 1px 1px #000; max-width: 100% !important; background-color: transparent; border: transparent; padding: 0px;">
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <div class="row center-control2">
+            <label class="col item custom-back-transparent">
+                <div class="input-register placeholder-register">
+                    <p style="font-size: 14px; color: white; text-shadow: 1px 1px 1px #000; font-weight: bold; padding: 0px;">Final:</p>
+                </div>
+            </label>
+            <label class="col item item-input item-select custom-back-transparent">
+                <select class="transparent-input transparent-border custom-date-select" " ng-model="consulta.monthFin " style="font-size: 12px; color: white; text-shadow: 1px 1px 1px #000; max-width: 100% !important; background-color: transparent; border: transparent; padding: 0px;"">
+                    <option value="01">Enero(1)</option>
+                    <option value="02">Febrero(2)</option>
+                    <option value="03">Marzo(3)</option>
+                    <option value="04">Abril(4)</option>
+                    <option value="05">Mayo(5)</option>
+                    <option value="06">Junio(6)</option>
+                    <option value="07">Julio(7)</option>
+                    <option value="08">Agosto(8)</option>
+                    <option value="09">Septiembre(9)</option>
+                    <option value="10">Octubre(10)</option>
+                    <option value="11">Noviembre(11)</option>
+                    <option value="12">Diciembre(12)</option>
+                </select>
+            </label>
+            <label class="col item item-input item-select custom-back-transparent ">
+                <select class="transparent-input transparent-border custom-date-select " ng-model="consulta.dayFin " style="font-size: 12px; color: white; text-shadow: 1px 1px 1px #000; max-width: 100% !important; background-color: transparent; border: transparent; padding: 0px;">
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </label>
+            <label class="col item item-input item-select custom-back-transparent ">
+                <select class="transparent-input transparent-border custom-date-select " ng-model="consulta.yearFin " style="font-size: 12px; color: white; text-shadow: 1px 1px 1px #000; max-width: 100% !important; background-color: transparent; border: transparent; padding: 0px;">
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <div class="historial-detail-text2">
+            <button style="background-color: Transparent; border: solid; border-color: white;border-radius: 8px" class="button ion-search button-font boton-centrado" ng-click="consultarOrdenes() ">Buscar</button>
+        </div>
+        <div class="card custom-card " ng-click="verDetalles($index) " ng-repeat="h in historialLista ">
+            <div class="item item-divider cell-2 ">
+                <a class="card-font ">Pedido: {{h.id}}</a>
+            </div>
+            <div class="item item-text-wrap ">
+                <div class="row ">
+                    <div class="col historial-detail-text1 ">Estado del Pedido: {{h.order_status_id}} - {{h.name_status}}
+                        <a ng-switch on="h.order_status_id ">
+                            <img style="height:15px; width:15px; margin-left:2% " ng-switch-when="1 " src="img/inProgress.png ">
+                            <img style="height:15px; width:15px; margin-left:2% " ng-switch-when="2 " src="img/inProgress.png ">
+                            <img style="height:15px; width:15px; margin-left:2% " ng-switch-when="3 " src="img/inProgress.png ">
+                            <img style="height:15px; width:15px; margin-left:2% " ng-switch-when="4 " src="img/success.png ">
+                            <img style="height:15px; width:15px; margin-left:2% " ng-switch-when="5 " src="img/success.png ">
+                            <img style="height:15px; width:15px; margin-left:2% " ng-switch-when="6 " src="img/cancelled.png ">
+                            <img style="height:15px; width:15px; margin-left:2% " ng-switch-default src="img/inProgress.png ">
+                        </a>
+                    </div>
+                    <div class="col historial-detail-text1 ">Fecha: {{h.register_date}}</div>
+                </div>
+                <div class="row ">
+                    <div class="col historial-detail-text1 ">Nombre del Cliente: {{h.name_user}}</div>
+                    <div class="col historial-detail-text1 ">Teléfono: {{h.phone_user}}</div>
+                </div>
+                <div class="row ">
+                    <div class="col historial-detail-text1 ">Total: {{h.cost}}</div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

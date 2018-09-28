@@ -1,0 +1,37 @@
+<ion-view view-title="Detalles Pedido" align-title="left" ng-init="init()" cache-view="false">
+	<ion-header-bar class="app-icon-header">
+		<button class="button button-icon icon ion-chevron-left custom-icon-white" ng-click="irAtras()"></button>
+	</ion-header-bar>
+	<ion-content>
+		<div class="content" style="background-color: lightgray; height: 10%;">
+		<h1><a class="title ionic-titulo2-historial"><br>DETALLES DEL PEDIDO</a></h1>
+		</div>
+		<br>
+		<div class="padding custom-card">
+			<h1 class="ionic-datos-cliente-asignado"><b>Cliente:</b> {{pedidoSeleccionado.name_user}} {{pedidoSeleccionado.last_name_user}}</h1>
+			<h1 class="ionic-datos-cliente-asignado"><b>Tel:</b> {{pedidoSeleccionado.phone_user}}</h1>
+			<h1 class="ionic-datos-cliente-asignado"><b>Pedido #:</b> {{pedidoSeleccionado.id}}</h1>
+			<h1 class="ionic-datos-cliente-asignado"><b>Observaciones:</b> {{pedidoSeleccionado.observations}}</h1>
+		</div>
+		<div class="list">
+			<div class="card custom-card" ng-click="irDetallesSolicitud($index)" ng-repeat="d in detallesPedido">
+				<div ng-class="{'item item-divider item-assertive': d.status == 0 || d.status == 2, 'item item-divider item-balanced': d.status == 1 }">
+					{{d.order_type}}
+				</div>
+				<div class="item item-text-wrap">
+					<p><b>Fecha:</b> {{d.register_date}}</p>
+					<p><b>Dirección de inicio:</b> {{d.initial_address}}</p>
+					<p><b>Dirección de final:</b> {{d.final_address}}</p>
+					<br>
+					<p><b>Anotaciones:</b> {{d.observations}}</p>
+				</div>
+			</div>
+		</div>
+		<button class="boton-gris boton-centrado button button-block ion-ios-telephone icon-left custom-icon-yellow" ng-click="llamar()"><a class="fuente-boton-gris">LLAMAR USUARIO</a>
+    	</button>
+	</ion-content>
+	<ion-footer-bar class="bar-assertive">
+    	<button style="font-weight: bold;" class="button ion-checkmark-circled button-clear" ng-click="finalizarPedido()">Finalizar</button>
+    	<a class="title">Total: ${{total}}</a>
+  	</ion-footer-bar>
+</ion-view>

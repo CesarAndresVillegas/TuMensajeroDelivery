@@ -1,0 +1,29 @@
+<ion-view view-title="Login" align-title="left" ng-init="init()" cache-view="false">
+	<ion-content class="padding" style="background: url(img/login.png) center; background-size: cover;">
+		<div class="padding-top hero no-header flat">
+			<div class="content">
+				<br>
+				<br>
+				<div class="app-icon"></div>
+				<h1> <a class="letra-amarilla">Bike</a>Now Mensajeros</h1>
+			</div>
+		</div>
+		<br>
+		<label class="boton-centrado input-unline item item-input item-floating-label">
+			<span class="input-label span-login">Correo:</span>
+			<input class="input-login placeholder-login" type="text" placeholder="Correo..." spellcheck="false" ng-model="usuario.user" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required>
+		</label>
+		<label class="boton-centrado input-unline item item-input item-floating-label">
+			<span class="input-label span-login">Contraseña:</span>
+			<input class="input-login placeholder-login" type="password" placeholder="Contraseña..." spellcheck="false" ng-model="usuario.pwd">
+		</label>
+		<br>
+		<br>
+		<button class="button-small boton-transparente boton-centrado button button-block ion-log-in icon-left custom-icon-yellow" ng-click="login()" ng-disabled="controlDisabled">
+			<a class="fuente-boton">INICIO</a>
+		</button>
+		<button class="button-small boton-transparente boton-centrado button button-block ion-help custom-icon-yellow" ng-click="irRecuperarContrasena()">
+			<a class="fuente-boton">RECUPERAR CONTRASEÑA</a>
+		</button>
+	</ion-content>
+</ion-view>
